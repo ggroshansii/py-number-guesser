@@ -2,6 +2,7 @@
 ######## LEVEL ONE ########
 # In level one, the computer generates a random number between 1 and 10 and the user has 3 guesses to pick the correct number. The computer will tell you if you are too high or too low.
 
+from random import randint
 
 computer_number = randint(1, 10)
 guesses = 3

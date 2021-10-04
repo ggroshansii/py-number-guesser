@@ -1,6 +1,8 @@
 ######## LEVEL TWO ########
 # In level two, the game is reversed and the user picks a number and the computer then has 3 guesses to select the correct answer.
 
+from random import randint
+
 player_number = input("Please choose a number 1-10: ")
 guesses = 3 
 correct = False
