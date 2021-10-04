@@ -4,18 +4,22 @@
 
 from random import randint
 
-computer_number = randint(1, 10)
-guesses = 3
-correct = False
 
-while guesses > 0 and correct == False:
-    player_number = input("Guess the computer's number (1-10): ")
-    if computer_number == int(player_number):
-        print("You have guess correctly")
-        correct = True
-    else:
-        print("You have not guess correctly")
-    guesses -= 1
+def play_level_1():
+    computer_number = randint(1, 10)
+    guesses = 3
+    correct = False
 
-if guesses == 0 and correct == False:
-    print("You have ran out of guesses")
+    while guesses > 0 and correct == False:
+        player_number = input("Guess the computer's number (1-10): ")
+        if computer_number == int(player_number):
+            print("You have guess correctly")
+            correct = True
+        else:
+            print("You have not guess correctly")
+        guesses -= 1
+
+    if guesses == 0 and correct == False:
+        print("You have ran out of guesses")
+
+
