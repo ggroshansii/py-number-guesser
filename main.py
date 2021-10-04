@@ -46,3 +46,18 @@ from random import randint
 ######## LEVEL THREE ########
 # In level three, the computer's guesses are optimized to refine the range on the guesses based on whether they are too high or too low. Print how many guesses it takes the computer before it correctly guesses the number.
 
+
+computer_number = randint(1, 10)
+guesses = 3
+correct = False
+
+while guesses > 0 and correct == False:
+    player_number = int(input("Guess the computer's number (1-10): "))
+    if computer_number == player_number:
+        print("You have guess correctly")
+        correct = True
+    elif computer_number > player_number
+    guesses -= 1
+
+if guesses == 0 and correct == False:
+    print("You have ran out of guesses")
