@@ -4,8 +4,17 @@
 
 from random import randint
 
-
 def play_level_1():
+
+    print("Welcome to Level 1")
+    print(" ")
+    print("--")
+    print(" ")
+    print("Level 1 Description: In level one, the computer generates a random number between 1 and 10 and the user has 3 guesses to pick the correct number. The computer will tell you if you are too high or too low.")
+    print(" ")
+    print("--")
+    print(" ")
+
     computer_number = randint(1, 10)
     guesses = 3
     correct = False
