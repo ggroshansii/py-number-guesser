@@ -6,6 +6,9 @@ from random import randint
 
 def play_level_1():
 
+    print(" ")
+    print(" ")
+    print(" ")
     print("Welcome to Level 1")
     print(" ")
     print("--")
